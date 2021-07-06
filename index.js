@@ -23,7 +23,7 @@ const start = () => {
       }
 
       if (text.includes('хуй')) {
-        return bot.sendMessage(chatId, 'Я б тебя послал, но у меня этот проект open-source на гитхабе...')
+        return bot.sendMessage(chatId, 'Извинись!')
       }
       if (text === 'да' || text === 'Да' ) {
         return bot.sendMessage(chatId, 'Пизда')
@@ -38,6 +38,9 @@ const start = () => {
   bot.on('callback_query', (msg) => {
     const meme_id = msg.data
     const chatId = msg.chat.id
+    switch (meme_id) {
+      case '0': return bot.sendPhoto(chatId, './assets/AreU.png')
+    }
   })
 }
 
