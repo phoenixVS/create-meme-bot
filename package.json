@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "micro-bot"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/phoenixVS/create-meme-bot#readme",
   "dependencies": {
+    "micro-bot": "^2.5.3",
     "node-telegram-bot-api": "^0.53.0",
     "nodemon": "^2.0.9"
   }
