@@ -1,10 +1,8 @@
 const TelegramApi = require('node-telegram-bot-api')
-const { Composer } = require('micro-bot')
 const makeMeme = require('./makeMeme')
 const token = '1862670190:AAGkklgQOVq2555Lz4FOvk6hs1e17AxJ0co'
 
-const bot = new Composer()
- // new TelegramApi(token, { polling: true})
+const bot = new TelegramApi(token, { polling: true})
 
 const start = () => {
   bot.setMyCommands([
@@ -44,5 +42,3 @@ const start = () => {
 }
 
 start()
-
-module.exports = bot
