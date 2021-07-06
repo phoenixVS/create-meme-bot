@@ -2,10 +2,10 @@
   "name": "create-meme-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "/* index.js */",
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "noder index.js"
+    "start": "/* node index.js */"
   },
   "repository": {
     "type": "git",
